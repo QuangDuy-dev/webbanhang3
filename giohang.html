@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ Hàng</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/trangchu.css">
+    <script src="./assets/js/giohang.js"></script>
+    <script src="./assets/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/trangchu.js">  </script>
+</head>
+<body>
+    <header id="square1">
+        <h1><b>PC GAMING STORE</b></h1>
+        <p>Uy tín - Tin tưởng - Chất lượng</p>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img id="logo" src="./assets/img/pcshop của ttg.jpg"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./trangchudadangnhap.html"><b>Trang chủ</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="tranglaptop.html">Laptop</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./trangphukien.html">Phụ kiện</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./trangdienthoai.html">Điện thoại</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./tacgia.html">Tác giả</a>
+            </li>
+            <li class="nav-item">
+                <li><a class="nav-link" href="./tintuc.html">Tin tức</a></li>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link noibat" href="giohang.html">
+                    Giỏ hàng (<span id="cartCount">0</span>)
+                </a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Tìm kiếm">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Tìm kiếm</button>
+          </form>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <h1>Giỏ Hàng Của Bạn</h1>
+        <div id="danhSachGioHang" class="mt-4">
+        </div>
+        <div class="mt-4 noilen1">
+            <h3>Tổng Tiền: <span id="tongTien">0</span> đ</h3>
+        </div>
+        <button onclick="xoaGioHang()" class="btn btn-danger mt-3 noilen">Xóa Giỏ Hàng</button>
+        <button onclick="thanhToan()" class="btn btn-success mt-3 ml-2 noilen">Thanh Toán</button>
+    </div>
+</body>
+</html>
